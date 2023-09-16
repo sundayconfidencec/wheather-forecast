@@ -1,0 +1,114 @@
+/* Common styles for all screen sizes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: whitesmoke;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Use min-height to ensure the page is at least 100% of the viewport height */
+}
+
+.container {
+    max-width: 90%; /* Adjust the maximum width based on the design */
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px; /* Add margin for spacing */
+}
+
+.inputs {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.inputs input[type="text"] {
+    width: 100%; /* Adjust input width for responsiveness */
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border: 2px solid #c2c2c2;
+    border-radius: 2px;
+    margin-bottom: 10px; /* Add some space between input and submit button */
+}
+
+.inputs input[type="submit"] {
+    width: 100%; /* Adjust button width for responsiveness */
+    padding: 10px;
+    font-weight: bold;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 2px;
+    background: #0a67ca;
+}
+
+.display {
+    text-align: center;
+    width: 100%;
+    color: #16a864;
+}
+
+.wrapper {
+    display: none;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px auto; /* Add margin for spacing */
+    max-width: 100%; /* Ensure it doesn't exceed the viewport width */
+}
+
+.wrapper h2 {
+    padding: 10px 0;
+    text-align: center;
+    background: #0548b5;
+    color: white;
+    font-family: sans-serif;
+}
+
+.wrapper p {
+    margin: 10px 0;
+    text-align: left;
+    color: #04214c;
+    font-size: 1.2rem;
+}
+
+.wrapper h2 span {
+    font-size: 1.4rem;
+    color: #9beefb;
+}
+
+.wrapper p span {
+    color: #90006e;
+    font-size: 1.3rem;
+}
+
+.container h1 {
+    text-align: center;
+}
+
+/* Media queries for different screen sizes */
+@media (min-width: 768px) {
+    .container {
+        max-width: 80%;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 60%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 50%;
+    }
+}
